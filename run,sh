@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# 切换到脚本所在目录
+cd "$(dirname "$0")"
+current_dir=$(pwd)
+# 切换到Wav2Lip目录
+cd ./Wav2Lip
+
+# 运行tts.py
+python tts.py
+cd "$current_dir"
